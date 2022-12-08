@@ -1,0 +1,30 @@
+[
+  {
+    "name": "List___en",
+    "path": "/List",
+    "component": "C:\\\\Users\\\\tilek\\\\Desktop\\\\vuetify\\\\nuxt-app\\\\pages\\\\List\\\\index.vue",
+    "chunkName": "pages/List/index",
+    "_name": "_a23fdb9a"
+  },
+  {
+    "name": "index___ru",
+    "path": "/ru",
+    "component": "C:\\\\Users\\\\tilek\\\\Desktop\\\\vuetify\\\\nuxt-app\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_734f131e"
+  },
+  {
+    "name": "List___ru",
+    "path": "/ru/List",
+    "component": "C:\\\\Users\\\\tilek\\\\Desktop\\\\vuetify\\\\nuxt-app\\\\pages\\\\List\\\\index.vue",
+    "chunkName": "pages/List/index",
+    "_name": "_a23fdb9a"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "C:\\\\Users\\\\tilek\\\\Desktop\\\\vuetify\\\\nuxt-app\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_734f131e"
+  }
+]
