@@ -60,11 +60,9 @@
 <script>
 
 import {mapActions, mapGetters} from "vuex";
-import CountryFlag from "vue-country-flag"
 
 export default {
   name: 'DefaultLayout',
-  components: {CountryFlag},
   data() {
     return {
       lightMode: false,
