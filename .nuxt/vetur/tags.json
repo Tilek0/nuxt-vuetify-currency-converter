@@ -1,5 +1,8 @@
 {
   "ListItem": {
     "description": "Auto imported from components/ListItem.vue"
+  },
+  "MyHeader": {
+    "description": "Auto imported from components/MyHeader.vue"
   }
 }
