@@ -2,6 +2,12 @@
   "ListItem": {
     "description": "Auto imported from components/ListItem.vue"
   },
+  "MobileCard": {
+    "description": "Auto imported from components/MobileCard.vue"
+  },
+  "MobileHeader": {
+    "description": "Auto imported from components/MobileHeader.vue"
+  },
   "MyHeader": {
     "description": "Auto imported from components/MyHeader.vue"
   }

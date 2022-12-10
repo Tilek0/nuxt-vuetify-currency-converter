@@ -3,6 +3,7 @@ export const state = () => ({
   currencyKeys: [],
   currencyDataList: [],
   currencyUpdateTime: '',
+  isMobile: false,
 })
 
 
@@ -25,6 +26,9 @@ export const mutations = {
     })
     state.currencyUpdateTime = response.time_last_update_utc
   },
+  setIsMobile(state, boolean) {
+    state.isMobile = boolean
+  }
 }
 
 export const getters = {
@@ -37,4 +41,7 @@ export const getters = {
   getUpdatedTime: (state) => {
     return state.currencyUpdateTime
   },
+  getIsMobile: (state) => {
+    return state.isMobile
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-  <v-card width="50%" height="70vh" class="overflow-y-auto pa-6 customScroll">
+  <v-card :width="getIsMobile ? null : '50%'" height="70vh" class="overflow-y-auto pa-6 customScroll">
     <v-list-item-subtitle class="text-center">{{ $t('currencyListUpdated') }}: {{
         getUpdatedTime
       }}
@@ -20,14 +20,15 @@ export default {
   name: "index",
   data() {
     return {
-      icon: null
+      icon: null,
     }
   },
   components: {ListItem},
   computed: {
     ...mapGetters([
       'getCurrencyDataList',
-      'getUpdatedTime'
+      'getUpdatedTime',
+      'getIsMobile',
     ]),
   },
 }

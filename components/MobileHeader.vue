@@ -1,17 +1,17 @@
 <template>
-  <v-app-bar class="d-flex align-center justify-space-around mb-16 pt-2 " height="80">
-    <v-row align="center">
-      <v-col>
+  <v-app-bar height="270">
+    <v-col class="d-flex flex-column align-center">
+      <v-row>
         <v-tabs class="d-flex justify-center">
-          <v-tab class="px-2">
+          <v-tab>
             <NuxtLink class="text-decoration-none" :to="localePath('/')">{{ $t('home') }}</NuxtLink>
           </v-tab>
-          <v-tab class="px-2">
+          <v-tab>
             <NuxtLink class="text-decoration-none" :to="localePath('/List')">{{ $t('list') }}</NuxtLink>
           </v-tab>
         </v-tabs>
-      </v-col>
-      <v-col cols="3">
+      </v-row>
+      <v-col cols="8">
         <v-select
           v-model="currency"
           :items="getCurrencyKeys"
@@ -23,7 +23,7 @@
         >
         </v-select>
       </v-col>
-      <v-col>
+      <v-row>
         <v-tabs class="d-flex justify-center">
           <v-tab>
             <NuxtLink class="text-decoration-none" exact :to="switchLocalePath('en')">{{ $t('en') }}</NuxtLink>
@@ -32,8 +32,8 @@
             <NuxtLink class="text-decoration-none" exact :to="switchLocalePath('ru')">{{ $t('ru') }}</NuxtLink>
           </v-tab>
         </v-tabs>
-      </v-col>
-      <v-col>
+      </v-row>
+      <v-row class="mt-8">
         <v-switch
           v-model="lightMode"
           @change="changeTheme"
@@ -41,8 +41,8 @@
           hide-details
         >
         </v-switch>
-      </v-col>
-    </v-row>
+      </v-row>
+    </v-col>
   </v-app-bar>
 </template>
 
@@ -50,7 +50,7 @@
 import HeaderMixin from "~/mixins/HeaderMixin";
 
 export default {
-  name: "MyHeader",
+  name: "MobileHeader",
   mixins: [HeaderMixin],
 }
 </script>
