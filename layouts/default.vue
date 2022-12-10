@@ -5,12 +5,10 @@
         <v-col>
           <v-tabs class="d-flex justify-center">
             <v-tab class="px-2">
-              <NuxtLink class="text-decoration-none" exact :to="{path: '/', params: 'main'}">{{ $t('home') }}</NuxtLink>
-            </v-tab>
-            <v-tab class="px-2">
-              <NuxtLink class="text-decoration-none" exact :to="{path: '/List', params: 'list'}">
-                {{ $t('list') }}
-              </NuxtLink>
+                <NuxtLink class="text-decoration-none" :to="localePath('/')">{{ $t('home') }}</NuxtLink>
+              </v-tab>
+              <v-tab class="px-2">
+                <NuxtLink class="text-decoration-none" :to="localePath('/List')">{{ $t('list') }}</NuxtLink>
             </v-tab>
           </v-tabs>
         </v-col>
@@ -50,7 +48,7 @@
     <v-main class="fullHeight">
       <v-container class="d-flex justify-center">
         <keep-alive>
-          <Nuxt :key="$route.params.myParam"/>
+          <Nuxt/>
         </keep-alive>
       </v-container>
     </v-main>
