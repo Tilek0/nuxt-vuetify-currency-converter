@@ -1,4 +1,5 @@
 export { default as ListItem } from '../..\\components\\ListItem.vue'
+export { default as MyHeader } from '../..\\components\\MyHeader.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
